@@ -1,5 +1,6 @@
 package ws.tilda.anastasia.androidinjectorproject.application;
 
+import dagger.BindsInstance;
 import dagger.Component;
 import dagger.android.support.AndroidSupportInjectionModule;
 
@@ -9,4 +10,10 @@ import dagger.android.support.AndroidSupportInjectionModule;
         AndroidSupportInjectionModule.class
 })
 public interface ApplicationComponent {
+
+    @Component.Builder
+    interface Builder {
+        @BindsInstance Builder applicationComponent(MyApplication application);
+        MyApplication build();
+    }
 }
