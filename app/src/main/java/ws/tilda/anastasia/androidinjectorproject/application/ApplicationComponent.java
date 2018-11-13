@@ -16,4 +16,6 @@ public interface ApplicationComponent {
         @BindsInstance Builder applicationComponent(MyApplication application);
         MyApplication build();
     }
+
+    void inject(MyApplication application);
 }
