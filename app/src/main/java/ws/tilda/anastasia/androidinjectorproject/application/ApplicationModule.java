@@ -15,6 +15,7 @@ public class ApplicationModule {
         this.context = context;
     }
 
+    @ApplicationScope
     @Provides
     Context context() {
         return this.context;
