@@ -2,6 +2,8 @@ package ws.tilda.anastasia.androidinjectorproject.application;
 
 import android.content.Context;
 
+import javax.inject.Qualifier;
+
 import dagger.Module;
 import dagger.Provides;
 import ws.tilda.anastasia.androidinjectorproject.activity.ActivitySubComponent;
@@ -16,6 +18,7 @@ public class ApplicationModule {
     }
 
     @ApplicationScope
+    @Qualifier
     @Provides
     Context context() {
         return this.context;
