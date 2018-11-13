@@ -18,7 +18,6 @@ public class ApplicationModule {
     }
 
     @ApplicationScope
-    @ApplicationQualifier
     @Provides
     Context context() {
         return this.context;
