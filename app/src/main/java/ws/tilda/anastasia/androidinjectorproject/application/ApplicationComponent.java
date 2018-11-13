@@ -13,8 +13,10 @@ public interface ApplicationComponent {
 
     @Component.Builder
     interface Builder {
-        @BindsInstance Builder applicationComponent(MyApplication application);
-        MyApplication build();
+        @BindsInstance
+        Builder applicationComponent(MyApplication application);
+
+        ApplicationComponent build();
     }
 
     void inject(MyApplication application);
