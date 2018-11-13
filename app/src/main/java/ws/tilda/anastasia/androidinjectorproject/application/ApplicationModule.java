@@ -1,4 +1,4 @@
-package ws.tilda.anastasia.androidinjectorproject;
+package ws.tilda.anastasia.androidinjectorproject.application;
 
 import dagger.Module;
 
